@@ -1,70 +1,60 @@
-export default function Portfolio() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      <nav className="flex justify-between items-center px-8 py-5 border-b border-gray-800">
-        <h1 className="text-2xl font-bold text-blue-500">Raj Soni</h1>
-      </nav>
+    <div
+      style={{
+        background: "black",
+        color: "white",
+        minHeight: "100vh",
+        padding: "40px",
+        fontFamily: "Arial"
+      }}
+    >
+      <h1 style={{ color: "#3b82f6", fontSize: "60px" }}>
+        Raj Soni
+      </h1>
 
-      <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20 gap-10">
-        <div className="max-w-xl">
-          <p className="text-blue-400 text-lg">Hello, I'm</p>
-          <h1 className="text-5xl md:text-7xl font-extrabold mt-3">Raj Soni</h1>
-          <h2 className="text-2xl md:text-3xl text-blue-500 mt-4 font-semibold">
-            Full Stack Java Developer
-          </h2>
-          <p className="text-gray-300 mt-6 leading-8 text-lg">
-            Passionate Full Stack Java Developer skilled in Java, Spring Boot,
-            Angular, HTML, CSS, JavaScript, and SQL.
-          </p>
-        </div>
+      <h2 style={{ color: "#60a5fa" }}>
+        Full Stack Java Developer
+      </h2>
 
-        <img
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop"
-          alt="Profile"
-          className="w-72 h-72 object-cover rounded-full border-4 border-blue-500"
-        />
-      </section>
+      <p style={{ marginTop: "20px", maxWidth: "700px" }}>
+        Passionate Full Stack Java Developer skilled in Java,
+        Spring Boot, Angular, HTML, CSS, JavaScript, SQL,
+        Bootstrap, and responsive web development.
+      </p>
 
-      <section className="px-8 md:px-20 py-16 border-t border-gray-800">
-        <h2 className="text-4xl font-bold text-blue-500 mb-6">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[
-            "Java",
-            "Spring Boot",
-            "Angular",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "SQL",
-            "Bootstrap",
-          ].map((skill) => (
-            <div
-              key={skill}
-              className="bg-gray-900 border border-gray-700 rounded-2xl p-6 text-center"
-            >
-              <h3 className="font-semibold text-lg">{skill}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+      <div
+        style={{
+          background: "#111827",
+          padding: "20px",
+          borderRadius: "15px",
+          marginTop: "30px"
+        }}
+      >
+        <h2>Skills</h2>
 
-      <section className="px-8 md:px-20 py-16 border-t border-gray-800">
-        <h2 className="text-4xl font-bold text-blue-500 mb-6">Project</h2>
-        <div className="bg-gray-900 rounded-3xl p-8 border border-gray-700">
-          <h3 className="text-3xl font-bold">Car Shopping Website</h3>
-          <p className="text-gray-300 mt-4 leading-8 text-lg">
-            Developed a responsive car shopping website using Java, Spring Boot,
-            Angular, HTML, CSS, JavaScript, SQL, and Bootstrap.
-          </p>
-        </div>
-      </section>
+        <ul>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Angular</li>
+          <li>HTML CSS JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
 
-      <section className="px-8 md:px-20 py-16 border-t border-gray-800">
-        <h2 className="text-4xl font-bold text-blue-500 mb-6">Contact</h2>
+      <div
+        style={{
+          background: "#111827",
+          padding: "20px",
+          borderRadius: "15px",
+          marginTop: "30px"
+        }}
+      >
+        <h2>Contact</h2>
+
         <p>Email: rajsoni6080@gmail.com</p>
         <p>Phone: +91-7773861849</p>
-        <p>GitHub: github.com/writercodes1</p>
-      </section>
+      </div>
     </div>
   );
-}
+} 
